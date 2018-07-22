@@ -1,0 +1,15 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; /*so all the element in the page inhiritate the value from the parent*/
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box; /*so the border and the padding are included in the width and height*/
+}
