@@ -7,9 +7,26 @@
 }
 
 html {
-    font-size: 62.5%;
+    //define what 1rem is
+    font-size: 62.5%; // 1rem = 10px / 16px = 62.5%
+    
+    @include respond(tab-land) {
+        font-size: 56.25%; // 9px
+    }
+    @include respond(tab-port) {
+        font-size: 50%; // 8px
+    }
+    @include respond(big-desktop) {
+        font-size: 75%; // 12px
+    }
+    
 }
 
 body {
     box-sizing: border-box; /*so the border and the padding are included in the width and height*/
+    padding: 3rem;
+    @include respond(tab-port) {
+        padding: 0;
+    }
+   
 }
