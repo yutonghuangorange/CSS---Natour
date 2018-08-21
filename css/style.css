@@ -1,4 +1,5 @@
 /*
+<<<<<<< Updated upstream
 0 - 600px:          Phone
 600 - 900px:        Tablet portrait
 900 - 1200px:       Tablet landscape
@@ -11,13 +12,26 @@ font size, it's related to the browser default font size
 1em = 16px
 
 $breakpoint argument choices:
+=======
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+1200 - 1800px:  normal
+1800px +:       Big desktop
+*/
+/*
+$breakpoint arguement choices:
+>>>>>>> Stashed changes
 - phone
 - tab-port
 - tab-land
 - big-desktop
+<<<<<<< Updated upstream
 
 Mobile responsive design order:
 Base + Typography > general layout + grid > page layout > components
+=======
+>>>>>>> Stashed changes
 */
 @keyframes moveInLeft {
   0% {

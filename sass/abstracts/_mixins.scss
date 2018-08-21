@@ -31,6 +31,7 @@ $breakpoint argument choices:
 - tab-port
 - tab-land
 - big-desktop
+<<<<<<< Updated upstream
 
 Mobile responsive design order:
 Base + Typography > general layout + grid > page layout > components
@@ -47,5 +48,22 @@ Base + Typography > general layout + grid > page layout > components
     }
     @if $breakpoint == big-desktop {
         @media (min-width: 112.5em) { @content }; // 1800px
+=======
+*/
+
+// the font size in media queries definition is not related to html font-size, it's related to browser default font
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 600px) { @content; }
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 900px) { @content; }
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width: 1200px) { @content; }
+    }
+    @if $breakpoint == big-desktop {
+        @media (min-width: 1800px) { @content; }
+>>>>>>> Stashed changes
     }
 }
